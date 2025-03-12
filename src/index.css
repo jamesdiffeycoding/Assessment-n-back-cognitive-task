@@ -1,68 +1,82 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+header {
+  background-color: rgb(138, 105, 212);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
 }
 
 body {
-  margin: 0;
+  width: 100%;
+  background-color: rgb(236, 228, 253);
+  color: black;
+  color: rgb(138, 105, 212);
+}
+
+.full-page {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.main-section {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.rules-section {
+  padding: 1rem;
+}
+
+.start-btn {
+  all: unset;
+  color: white;
   cursor: pointer;
-  transition: border-color 0.25s;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: rgb(52, 181, 52);
+  font-weight: bold;
 }
-button:hover {
-  border-color: #646cff;
+.start-btn:hover {
+  background-color: green;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.game {
+  padding: 3rem;
+  margin-block: 3rem;
+  max-width: 500px;
+  background-color: rgba(45, 45, 45, 0.9);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 2rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.game-item {
+  padding: 1rem;
+}
+
+.game-item-tag {
+  font-size: 1.5rem;
+}
+.game-item-letter {
+  font-size: 6rem;
+  height: 6rem;
 }
