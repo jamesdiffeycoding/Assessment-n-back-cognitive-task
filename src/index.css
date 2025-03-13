@@ -29,8 +29,10 @@ body {
 }
 
 .main-section {
-  max-width: 1000px;
-  display: flex;
+  max-width: 700px;
+  display: grid;
+  margin-block: 1.5rem;
+  grid-row-gap: 1.5rem;
   flex-direction: column;
   text-align: center;
   align-content: center;
@@ -38,45 +40,45 @@ body {
   justify-content: center;
 }
 
-.rules-section {
-  padding: 1rem;
-}
-
-.start-btn {
+.btn {
   all: unset;
   color: white;
   cursor: pointer;
-  padding: 2rem;
+  padding: 0.5rem;
   border-radius: 2rem;
-  background-color: rgb(52, 181, 52);
   font-weight: bold;
 }
+
+.reset-btn {
+  background-color: rgb(138, 105, 212);
+}
+.reset-btn:hover {
+  background-color: rgb(190, 165, 245);
+}
+.start-btn {
+  background-color: rgb(52, 181, 52);
+}
+
 .start-btn:hover {
   background-color: green;
 }
 .game {
-  padding: 3rem;
-  margin-block: 3rem;
-  max-width: 500px;
+  margin-inline: 1rem;
+  max-height: 50vh;
+  height: 20rem;
   background-color: rgba(45, 45, 45, 0.9);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   align-content: center;
   align-items: center;
-  justify-content: center;
   color: white;
   border-radius: 2rem;
-}
-
-.game-item {
-  padding: 1rem;
-}
-
-.game-item-tag {
+  border: 10px solid transparent;
   font-size: 1.5rem;
+  cursor: pointer;
 }
-.game-item-letter {
+.game-letter {
   font-size: 6rem;
-  height: 6rem;
+}
+
+.game:active {
+  border: 10px solid rgb(138, 105, 212);
 }
