@@ -10,6 +10,7 @@ header {
   width: 100%;
   text-align: center;
   padding: 1rem;
+  font-size: 15px;
 }
 
 body {
@@ -40,6 +41,10 @@ body {
   justify-content: center;
 }
 
+.rules-section-info {
+  padding-inline: 1rem;
+  text-align: left;
+}
 .btn {
   all: unset;
   color: white;
